@@ -15,3 +15,5 @@ postgres > select 'a' < 'A';
 docker-compose up -d
 bash test.sh
 ```
+
+My Execution result was saved at `output.txt`.
