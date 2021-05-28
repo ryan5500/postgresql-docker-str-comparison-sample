@@ -1,7 +1,7 @@
 version: '3'
 services:
   postgres-10-alpine:
-    image: postgres:10-alpine
+    image: postgres:10-alpine@sha256:7b4ccd2681f2b3615998c80eaaf0c1c1749f970757f89a651d9dacb2219943a3
     environment:
       POSTGRES_PASSWORD: secret
     volumes:
@@ -10,7 +10,7 @@ services:
       - 5432:5432
 
   postgres-10:
-    image: postgres:10
+    image: postgres:10@sha256:273c2a5c3066a24da5f3e2bbbc9950eca3b87714de6278f49a6d74a4a1b17262
     environment:
       POSTGRES_PASSWORD: secret
     volumes:
@@ -19,7 +19,7 @@ services:
       - 5433:5432
 
   postgres-11-alpine:
-    image: postgres:11-alpine
+    image: postgres:11-alpine@sha256:ff19c2550db8cabd7df05a931c365c1c9ed6d9a26256127d6020fcbd8f6c924d
     environment:
       POSTGRES_PASSWORD: secret
     volumes:
@@ -28,7 +28,7 @@ services:
       - 5434:5432
 
   postgres-11:
-    image: postgres:11
+    image: postgres:11@sha256:7178f3d53683713faaf760e45f2c36f3d86640fd838b19af1f26a5adc3c9de3e
     environment:
       POSTGRES_PASSWORD: secret
     volumes:
@@ -37,7 +37,7 @@ services:
       - 5435:5432
 
   postgres-12-alpine:
-    image: postgres:12-alpine
+    image: postgres:12-alpine@sha256:52524fffef03f9f2b9a7aff62f7e703ac391dff8b949fc709cb166250acc6f37
     environment:
       POSTGRES_PASSWORD: secret
     volumes:
@@ -46,7 +46,7 @@ services:
       - 5436:5432
 
   postgres-12:
-    image: postgres:12
+    image: postgres:12@sha256:35c291f520e55f8a1c87c6f6952f3b45306a9fd24d5676ad567b411a282e7cce
     environment:
       POSTGRES_PASSWORD: secret
     volumes:
@@ -55,7 +55,7 @@ services:
       - 5437:5432
 
   postgres-13-alpine:
-    image: postgres:13-alpine
+    image: postgres:13-alpine@sha256:eb7bfa47a1c56eeb6e823c6a5c6e8abb004a5cef4018514469c81ff6822ac0b8
     environment:
       POSTGRES_PASSWORD: secret
     volumes:
@@ -64,7 +64,7 @@ services:
       - 5438:5432
 
   postgres-13:
-    image: postgres:13
+    image: postgres:13@sha256:a7e09abc46b46ed1a4ddc43e051e4be595c10efcd78bed723da0cce0175ac2e2
     environment:
       POSTGRES_PASSWORD: secret
     volumes:
