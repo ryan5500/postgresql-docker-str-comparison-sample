@@ -1,3 +1,4 @@
+test_query: select 'a' < 'A'
 Postgresql ver: 10-alpine result
  ?column? 
 ----------
@@ -44,6 +45,120 @@ Postgresql ver: 13-alpine result
  ?column? 
 ----------
  f
+(1 row)
+
+
+Postgresql ver: 13 result
+ ?column? 
+----------
+ t
+(1 row)
+
+
+test_query: select 'a' = 'A'
+Postgresql ver: 10-alpine result
+ ?column? 
+----------
+ f
+(1 row)
+
+
+Postgresql ver: 10 result
+ ?column? 
+----------
+ f
+(1 row)
+
+
+Postgresql ver: 11-alpine result
+ ?column? 
+----------
+ f
+(1 row)
+
+
+Postgresql ver: 11 result
+ ?column? 
+----------
+ f
+(1 row)
+
+
+Postgresql ver: 12-alpine result
+ ?column? 
+----------
+ f
+(1 row)
+
+
+Postgresql ver: 12 result
+ ?column? 
+----------
+ f
+(1 row)
+
+
+Postgresql ver: 13-alpine result
+ ?column? 
+----------
+ f
+(1 row)
+
+
+Postgresql ver: 13 result
+ ?column? 
+----------
+ f
+(1 row)
+
+
+test_query: select 'A' = 'A'
+Postgresql ver: 10-alpine result
+ ?column? 
+----------
+ t
+(1 row)
+
+
+Postgresql ver: 10 result
+ ?column? 
+----------
+ t
+(1 row)
+
+
+Postgresql ver: 11-alpine result
+ ?column? 
+----------
+ t
+(1 row)
+
+
+Postgresql ver: 11 result
+ ?column? 
+----------
+ t
+(1 row)
+
+
+Postgresql ver: 12-alpine result
+ ?column? 
+----------
+ t
+(1 row)
+
+
+Postgresql ver: 12 result
+ ?column? 
+----------
+ t
+(1 row)
+
+
+Postgresql ver: 13-alpine result
+ ?column? 
+----------
+ t
 (1 row)
 
 
