@@ -1,4 +1,4 @@
-test_query: select 'a' < 'A'
+# test_query: select 'a' < 'A'
 Postgresql ver: 10-alpine result
  ?column? 
 ----------
@@ -55,7 +55,8 @@ Postgresql ver: 13 result
 (1 row)
 
 
-test_query: select 'a' = 'A'
+
+# test_query: select 'a' = 'A'
 Postgresql ver: 10-alpine result
  ?column? 
 ----------
@@ -112,7 +113,8 @@ Postgresql ver: 13 result
 (1 row)
 
 
-test_query: select 'A' = 'A'
+
+# test_query: select 'A' = 'A'
 Postgresql ver: 10-alpine result
  ?column? 
 ----------
@@ -167,5 +169,6 @@ Postgresql ver: 13 result
 ----------
  t
 (1 row)
+
 
 
