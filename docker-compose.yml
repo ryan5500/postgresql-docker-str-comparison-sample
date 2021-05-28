@@ -1,0 +1,83 @@
+version: '3'
+services:
+  postgres-10-alpine:
+    image: postgres:10-alpine
+    environment:
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - pgdata-10-alpine:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+  postgres-10:
+    image: postgres:10
+    environment:
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - pgdata-10:/var/lib/postgresql/data
+    ports:
+      - 5433:5432
+
+  postgres-11-alpine:
+    image: postgres:11-alpine
+    environment:
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - pgdata-11-alpine:/var/lib/postgresql/data
+    ports:
+      - 5434:5432
+
+  postgres-11:
+    image: postgres:11
+    environment:
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - pgdata-11:/var/lib/postgresql/data
+    ports:
+      - 5435:5432
+
+  postgres-12-alpine:
+    image: postgres:12-alpine
+    environment:
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - pgdata-12-alpine:/var/lib/postgresql/data
+    ports:
+      - 5436:5432
+
+  postgres-12:
+    image: postgres:12
+    environment:
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - pgdata-12:/var/lib/postgresql/data
+    ports:
+      - 5437:5432
+
+  postgres-13-alpine:
+    image: postgres:13-alpine
+    environment:
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - pgdata-13-alpine:/var/lib/postgresql/data
+    ports:
+      - 5438:5432
+
+  postgres-13:
+    image: postgres:13
+    environment:
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - pgdata-13:/var/lib/postgresql/data
+    ports:
+      - 5439:5432
+
+volumes:
+  pgdata-10:
+  pgdata-11:
+  pgdata-12:
+  pgdata-13:
+  pgdata-10-alpine:
+  pgdata-11-alpine:
+  pgdata-12-alpine:
+  pgdata-13-alpine:
